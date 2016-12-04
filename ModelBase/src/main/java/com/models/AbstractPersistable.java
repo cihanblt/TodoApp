@@ -1,6 +1,7 @@
 package com.models;
 
 import org.hibernate.annotations.Type;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -32,11 +33,13 @@ public abstract class AbstractPersistable implements Serializable{
     private long lastUpdatedId;
 
     @Temporal(TemporalType.DATE)
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Column(name = "creation_date")
     private Date creationDate = new Date();
 
     @Temporal(TemporalType.DATE)
     @Column(name = "last_updated_date")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date lastUpdatedDate;
 
     public long getId() {

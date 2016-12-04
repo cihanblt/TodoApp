@@ -11,10 +11,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
-          rel="stylesheet" media="screen" />
+          rel="stylesheet" media="screen"/>
     <link href="css/styles.css"
           th:href="@{/css/styles.css}"
-          rel="stylesheet" media="screen" />
+          rel="stylesheet" media="screen"/>
     <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
             th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
     <!--[if lt IE 9]>
@@ -27,48 +27,64 @@
 <body>
 <div class="row">
     <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+        <div th:switch="${success}">
+            <p th:case="${true}">
+            <div class="alert bg-success" role="alert">
+                <svg class="glyph stroked checkmark">
+                    <use xlink:href="#stroked-checkmark"></use>
+                </svg>
+                Kayıt başarıyla oluşturuldu!
+            <a href="#" th:href="@{/login}"><span>Giriş Yap</span></a>
+            <a href="#" class="pull-right"><span
+                    class="glyphicon glyphicon-remove"></span></a>
+            </div>
+            </p>
+            <p th:case="${false}">
+            <div class="alert bg-danger" role="alert">
+                <svg class="glyph stroked cancel">
+                    <use xlink:href="#stroked-cancel"></use>
+                </svg>
+                Kayıt oluşturma başarısız!!! <a href="#" class="pull-right"><span
+                    class="glyphicon glyphicon-remove"></span></a>
+            </div>
+            </p>
+            <p th:case="*"></p>
+        </div>
+
         <div class="login-panel panel panel-default">
             <div class="panel-heading"><span th:text="#{login.signup}"></span></div>
-            <span th:text="${#httpServletRequest.getParameter('error')}"></span>
-            <div class="error" th:if="${#httpServletRequest.getParameter('error') == 'badCredentialsException'}" th:with="errorMsg=#{login.badCredentials}">
-                <p class="errorMsg"><span th:text="${errorMsg}"></span></p>
-            </div>
             <div class="panel-body">
-                <form th:action="@{/login}" role="form" method="post">
+                <form action="#" th:action="@{/add_user}" th:object="${user}" role="form" method="post">
                     <fieldset>
                         <div class="form-group">
                             <label>Ad :</label>
-                            <input class="form-control" name="firstName" type="text" autofocus="" />
+                            <input class="form-control" th:field="*{firstName}" name="firstName" type="text"
+                                   autofocus=""/>
                         </div>
                         <div class="form-group">
                             <label>Soyad :</label>
-                            <input class="form-control" name="lastName" type="text"/>
+                            <input class="form-control" th:field="*{lastName}" name="lastName" type="text"/>
                         </div>
                         <div class="form-group">
                             <label>E-mail :</label>
-                            <input class="form-control" name="email" type="text"  />
+                            <input class="form-control" th:field="*{email}" name="email" type="text"/>
                         </div>
                         <div class="form-group">
                             <label><span th:text="#{login.user}"></span></label>
-                            <input class="form-control" name="username" type="text" />
+                            <input class="form-control" th:field="*{userName}" name="username" type="text"/>
                         </div>
 
                         <div class="form-group">
                             <label><span th:text="#{login.password}"></span></label>
-                            <input class="form-control" name="password" type="password" />
+                            <input class="form-control" th:field="*{password}" name="password" type="password"/>
                         </div>
-                        <div class="form-group">
-                            <label><span th:text="#{login.password.again}"></span></label>
-                            <input class="form-control" name="password" type="password" />
-                        </div>
-                        <input type="submit" class="btn btn-primary" th:value="#{login.send}" />
+                        <input type="submit" class="btn btn-primary" th:value="#{login.send}"/>
                     </fieldset>
                 </form>
             </div>
         </div>
     </div><!-- /.col-->
 </div><!-- /.row -->
-
 
 
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -81,7 +97,7 @@
 <script th:inline="javascript">
     //<![CDATA[
     !function ($) {
-        $(document).on("click","ul.nav li.parent > a > span.icon", function(){
+        $(document).on("click", "ul.nav li.parent > a > span.icon", function () {
             $(this).find('em:first').toggleClass("glyphicon-minus");
         });
         $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");

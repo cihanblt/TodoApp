@@ -33,6 +33,7 @@ public class CustomFilter extends GenericFilterBean {
             LOGGER.info(ipAddress + "filter is ok" );
         } catch (Exception e) {
             LOGGER.error(e.getMessage());
+            e.printStackTrace();
             filterChain.doFilter(request,response);
         }
 //            filterChain.doFilter(request,response);
