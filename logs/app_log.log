@@ -56,3 +56,49 @@
 [DEBUG] 2016-12-04 00:18:41.739 [http-nio-8080-exec-5] CustomUserDetailsServiceImpl - user authorities are []
 [DEBUG] 2016-12-04 00:23:57.581 [http-nio-8080-exec-1] CustomUserDetailsServiceImpl - user authorities are []
 [DEBUG] 2016-12-04 01:04:51.355 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 14:01:00.523 [http-nio-8080-exec-9] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 14:46:56.875 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are []
+[ERROR] 2016-12-04 15:10:19.716 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringInputGeneralFieldAttrProcessor' (signup:41)
+[ERROR] 2016-12-04 15:10:19.733 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringInputGeneralFieldAttrProcessor' (signup:41)
+[ERROR] 2016-12-04 16:23:35.843 [http-nio-8080-exec-3] CustomFilter - Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [user_info_pkey]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[DEBUG] 2016-12-04 16:23:56.538 [http-nio-8080-exec-8] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 16:37:33.952 [http-nio-8080-exec-3] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 17:16:47.710 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 17:16:51.430 [http-nio-8080-exec-1] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 17:27:39.501 [http-nio-8080-exec-6] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 17:27:48.183 [http-nio-8080-exec-9] CustomUserDetailsServiceImpl - user authorities are []
+[ERROR] 2016-12-04 17:52:51.204 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringInputGeneralFieldAttrProcessor' (index:46)
+[ERROR] 2016-12-04 17:52:51.272 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringInputGeneralFieldAttrProcessor' (index:46)
+[ERROR] 2016-12-04 17:53:31.581 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 17:53:32.712 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 17:53:47.241 [http-nio-8080-exec-8] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 17:53:49.375 [http-nio-8080-exec-8] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 17:54:50.329 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 17:54:53.283 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 17:56:22.385 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 17:56:22.816 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 17:57:15.154 [http-nio-8080-exec-3] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 17:57:21.374 [http-nio-8080-exec-3] TodoServiceImpl - Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Illegal access: this web application instance has been stopped already. Could not load [META-INF/services/org.hibernate.boot.model.TypeContributor]. The following stack trace is thrown for debugging purposes as well as to attempt to terminate the thread which caused the illegal access.
+[ERROR] 2016-12-04 17:57:21.388 [http-nio-8080-exec-3] CustomFilter - Request processing failed; nested exception is java.lang.NullPointerException
+[ERROR] 2016-12-04 17:57:44.641 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/", template might not exist or might not be accessible by any of the configured Template Resolvers
+[ERROR] 2016-12-04 17:58:00.790 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template "/", template might not exist or might not be accessible by any of the configured Template Resolvers
+[DEBUG] 2016-12-04 17:59:36.672 [http-nio-8080-exec-9] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 18:23:08.344 [http-nio-8080-exec-10] CustomUserDetailsServiceImpl - user authorities are []
+[ERROR] 2016-12-04 18:27:59.220 [http-nio-8080-exec-4] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 18:27:59.608 [http-nio-8080-exec-4] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 18:28:22.273 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 18:28:57.919 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is java.lang.ClassCastException: org.springframework.security.core.userdetails.User cannot be cast to com.models.User
+[ERROR] 2016-12-04 18:40:28.341 [http-nio-8080-exec-6] TodoServiceImpl - could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+[DEBUG] 2016-12-04 18:42:25.285 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 18:53:44.435 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 18:59:09.063 [http-nio-8080-exec-3] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 19:05:41.814 [http-nio-8080-exec-3] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 19:08:53.776 [http-nio-8080-exec-3] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 19:08:59.274 [http-nio-8080-exec-5] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 19:13:40.473 [http-nio-8080-exec-3] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 19:26:00.718 [http-nio-8080-exec-9] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 19:27:54.349 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 19:56:59.809 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 21:41:31.275 [http-nio-8080-exec-8] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 21:41:37.584 [http-nio-8080-exec-10] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 21:41:50.654 [http-nio-8080-exec-3] CustomUserDetailsServiceImpl - user authorities are []
