@@ -1,0 +1,58 @@
+[DEBUG] 2016-10-22 01:29:04.182 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-10-22 14:37:46.779 [http-nio-8080-exec-8] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-10-22 20:42:20.682 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-10-22 20:44:43.571 [http-nio-8080-exec-3] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-10-22 20:44:51.922 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-10-22 21:14:19.619 [http-nio-8080-exec-6] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-02 16:47:19.997 [http-nio-8080-exec-9] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-02 16:53:42.580 [http-nio-8080-exec-9] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-02 16:57:47.465 [http-nio-8080-exec-8] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-03 15:23:47.080 [http-nio-8080-exec-6] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-03 16:29:05.282 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are []
+[ERROR] 2016-12-03 16:39:59.012 [http-nio-8080-exec-8] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 19 - column 3 (index:22)
+[ERROR] 2016-12-03 16:39:59.045 [http-nio-8080-exec-8] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 19 - column 3 (index:22)
+[ERROR] 2016-12-03 16:40:02.365 [http-nio-8080-exec-4] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 19 - column 3 (index:22)
+[ERROR] 2016-12-03 16:40:02.401 [http-nio-8080-exec-4] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 19 - column 3 (index:22)
+[ERROR] 2016-12-03 16:40:11.861 [http-nio-8080-exec-6] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 19 - column 3 (index:22)
+[ERROR] 2016-12-03 16:40:11.881 [http-nio-8080-exec-6] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 19 - column 3 (index:22)
+[ERROR] 2016-12-03 16:40:28.685 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 65 - column 32 (index:22)
+[ERROR] 2016-12-03 16:40:28.709 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 65 - column 32 (index:22)
+[ERROR] 2016-12-03 16:41:03.196 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 65 - column 32 (index:22)
+[ERROR] 2016-12-03 16:41:03.411 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/header", line 65 - column 32 (index:22)
+[DEBUG] 2016-12-03 16:47:17.171 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-03 17:41:20.108 [http-nio-8080-exec-10] CustomUserDetailsServiceImpl - user authorities are []
+[ERROR] 2016-12-03 18:04:46.356 [http-nio-8080-exec-9] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{}" (index:41)
+[ERROR] 2016-12-03 18:04:46.471 [http-nio-8080-exec-9] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{}" (index:41)
+[ERROR] 2016-12-03 18:04:49.315 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{}" (index:41)
+[ERROR] 2016-12-03 18:04:49.328 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{}" (index:41)
+[ERROR] 2016-12-03 18:09:53.472 [http-nio-8080-exec-7] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 83 - column 91
+[ERROR] 2016-12-03 18:09:53.517 [http-nio-8080-exec-7] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 83 - column 91
+[ERROR] 2016-12-03 18:18:18.422 [http-nio-8080-exec-7] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 179 - column 3
+[ERROR] 2016-12-03 18:18:18.457 [http-nio-8080-exec-7] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 179 - column 3
+[ERROR] 2016-12-03 18:25:45.291 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 24 - column 3
+[ERROR] 2016-12-03 18:25:45.387 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 24 - column 3
+[ERROR] 2016-12-03 18:35:45.480 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 52 - column 31
+[ERROR] 2016-12-03 18:35:45.570 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 52 - column 31
+[ERROR] 2016-12-03 18:35:55.344 [http-nio-8080-exec-6] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 49 - column 34
+[ERROR] 2016-12-03 18:35:55.382 [http-nio-8080-exec-6] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 49 - column 34
+[ERROR] 2016-12-03 18:35:56.357 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 49 - column 34
+[ERROR] 2016-12-03 18:35:56.378 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 49 - column 34
+[DEBUG] 2016-12-03 19:22:10.981 [http-nio-8080-exec-5] CustomUserDetailsServiceImpl - user authorities are []
+[ERROR] 2016-12-03 19:27:14.834 [http-nio-8080-exec-9] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 58 - column 35
+[ERROR] 2016-12-03 19:27:14.907 [http-nio-8080-exec-9] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 58 - column 35
+[ERROR] 2016-12-03 19:29:41.809 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 56 - column 100
+[ERROR] 2016-12-03 19:29:41.883 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 56 - column 100
+[ERROR] 2016-12-03 19:30:01.054 [http-nio-8080-exec-6] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 56 - column 100
+[ERROR] 2016-12-03 19:30:01.121 [http-nio-8080-exec-6] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 56 - column 100
+[DEBUG] 2016-12-03 20:53:38.749 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-03 21:54:46.191 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 00:05:10.939 [http-nio-8080-exec-1] CustomUserDetailsServiceImpl - user authorities are []
+[ERROR] 2016-12-04 00:05:31.406 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 54 - column 29
+[ERROR] 2016-12-04 00:05:31.442 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 54 - column 29
+[ERROR] 2016-12-04 00:05:33.655 [http-nio-8080-exec-2] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 54 - column 29
+[ERROR] 2016-12-04 00:05:33.736 [http-nio-8080-exec-2] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 54 - column 29
+[ERROR] 2016-12-04 00:11:24.494 [http-nio-8080-exec-8] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#dates.format(#dates.createNow()),'dd.MM.yyyy'" (index:49)
+[ERROR] 2016-12-04 00:11:24.516 [http-nio-8080-exec-8] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "#dates.format(#dates.createNow()),'dd.MM.yyyy'" (index:49)
+[DEBUG] 2016-12-04 00:18:41.739 [http-nio-8080-exec-5] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 00:23:57.581 [http-nio-8080-exec-1] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-04 01:04:51.355 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are []

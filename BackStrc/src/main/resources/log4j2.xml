@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+    <Properties>
+        <Property name="path">logs</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console-Appender" target="SYSTEM_OUT">
+            <PatternLayout>
+                <pattern>
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>>
+            </PatternLayout>
+        </Console>
+        <File name="App-Appender" fileName="${path}/app_log.log">
+            <PatternLayout>
+                <pattern>
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+        </File>
+        <File name="SpringBoot-Appender" fileName="${path}/springboot_log.log">
+            <PatternLayout>
+                <pattern>
+                    [%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n
+                </pattern>
+            </PatternLayout>
+        </File>
+        <Jdbc name="databaseAppender" tableName="APPLICATION_LOG">
+            <ConnectionFactory class="com.loggings.LogConnectionFactory" method="getDatabaseConnection"/>
+            <!--<Column name="EVENT_ID" literal="LOGGING.APPLICATION_LOG_SEQUENCE.NEXTVAL" />-->
+            <Column name="EVENT_DATE" isEventTimestamp="true"/>
+            <Column name="LEVEL" pattern="%level" isUnicode="false"/>
+            <Column name="LOGGER" pattern="%logger" isUnicode="false"/>
+            <Column name="MESSAGE" pattern="%message" isUnicode="false"/>
+            <Column name="THROWABLE" pattern="%ex{full}" isUnicode="false"/>
+            <!--
+            CREATE TABLE application_log
+            (
+                event_date DATE,
+                level VARCHAR(256),
+                logger VARCHAR(256),
+                message TEXT,
+                throwable VARCHAR(256)
+           );
+           -->
+        </Jdbc>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.springframework.web" level="info" additivity="false">
+            <AppenderRef ref="SpringBoot-Appender"/>
+            <AppenderRef ref="Console-Appender"/>
+        </Logger>
+        <Logger name="com.log4j2.controller" level="info" additivity="false">
+            <AppenderRef ref="App-Appender"/>
+            <AppenderRef ref="Console-Appender"/>
+        </Logger>
+        <Logger name="com" level="info" additivity="false">
+            <AppenderRef ref="App-Appender"/>
+        </Logger>
+        <Logger name="com" level="error" additivity="false">
+            <AppenderRef ref="App-Appender"/>
+            <AppenderRef ref="databaseAppender"/>
+        </Logger>
+        <Root>
+            <AppenderRef ref="Console-Appender"/>
+
+        </Root>
+    </Loggers>
+</Configuration>
