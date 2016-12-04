@@ -59,6 +59,6 @@ public class TodoServiceTest {
 
         List<Todo> todos = todoService.getJobList(user);
 
-        Assert.assertEquals("failure : list.size not eq",3,todos.size());
+        Assert.assertEquals("failure : list.size not eq",2,todos.size());
     }
 }
