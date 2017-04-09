@@ -19,5 +19,6 @@ public class BackStrcApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BackStrcApplication.class, args);
+		System.out.println("test");
 	}
 }
