@@ -1,0 +1,8 @@
+FROM maven:3.3-jdk-8
+EXPOSE 8080
+VOLUME /tmp
+RUN mkdir -p /usr/src/TodoApp/BackStrc
+WORKDIR /usr/src/TodoApp/BackStrc
+ADD . /usr/src/TodoApp/BackStrc
+RUN mvn install
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/usr/src/TodoApp/BackStrc/target/backstrc-0.0.1-SNAPSHOT.jar.jar"]
