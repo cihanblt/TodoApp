@@ -1,5 +1,6 @@
 package com.repositories;
 
+import com.models.Status;
 import com.models.Todo;
 import com.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -14,5 +15,9 @@ import java.util.List;
 public interface TodoRepository extends JpaRepository<Todo,Long>{
 
     public List<Todo> findByUser(User user);
+
+    public List<Todo> findByAssignedToUser(User user);
+
+    public List<Todo> findByStatus(Status status);
 
 }

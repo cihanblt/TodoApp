@@ -102,3 +102,189 @@
 [DEBUG] 2016-12-04 21:41:31.275 [http-nio-8080-exec-8] CustomUserDetailsServiceImpl - user authorities are []
 [DEBUG] 2016-12-04 21:41:37.584 [http-nio-8080-exec-10] CustomUserDetailsServiceImpl - user authorities are []
 [DEBUG] 2016-12-04 21:41:50.654 [http-nio-8080-exec-3] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-06 20:00:32.986 [http-nio-8080-exec-8] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-06 20:00:37.969 [http-nio-8080-exec-10] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2016-12-06 20:00:41.413 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2017-03-12 19:24:47.579 [http-nio-8080-exec-10] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2017-03-12 19:25:44.860 [http-nio-8080-exec-6] CustomUserDetailsServiceImpl - user authorities are []
+[DEBUG] 2017-05-01 18:56:16.653 [http-nio-8080-exec-5] CustomUserDetailsServiceImpl - user authorities are [USER]
+[DEBUG] 2017-05-01 19:03:25.309 [http-nio-8080-exec-5] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 19:07:02.659 [http-nio-8080-exec-9] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 19:07:13.348 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 19:15:10.345 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[ERROR] 2017-05-01 19:15:10.624 [http-nio-8080-exec-8] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/sidebar", line 4 - column 42 (index:28)
+[ERROR] 2017-05-01 19:15:10.979 [http-nio-8080-exec-8] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="fragments/sidebar", line 4 - column 42 (index:28)
+[DEBUG] 2017-05-01 19:16:54.612 [http-nio-8080-exec-6] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 19:17:07.809 [http-nio-8080-exec-3] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 19:19:22.556 [http-nio-8080-exec-6] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 19:23:06.677 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 21:20:29.781 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[ERROR] 2017-05-01 21:20:29.995 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "users)" (assign-task:50)
+[ERROR] 2017-05-01 21:20:30.044 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "users)" (assign-task:50)
+[DEBUG] 2017-05-01 21:28:29.211 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 21:31:48.668 [http-nio-8080-exec-6] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 21:34:36.093 [http-nio-8080-exec-6] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 21:37:09.780 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 21:39:29.987 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 21:39:36.948 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 21:46:09.693 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 21:46:17.516 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 21:48:52.724 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 21:51:53.536 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 21:52:12.075 [http-nio-8080-exec-8] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 21:52:26.207 [http-nio-8080-exec-1] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 21:59:25.489 [http-nio-8080-exec-9] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 21:59:57.134 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 22:00:30.138 [http-nio-8080-exec-4] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 22:01:27.153 [http-nio-8080-exec-7] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 22:01:41.114 [http-nio-8080-exec-5] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 22:02:35.343 [http-nio-8080-exec-10] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 22:06:30.985 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 22:06:50.333 [http-nio-8080-exec-9] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 22:06:57.529 [http-nio-8080-exec-2] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 22:08:27.731 [http-nio-8080-exec-6] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[DEBUG] 2017-05-01 23:49:22.110 [http-nio-8080-exec-5] CustomUserDetailsServiceImpl - user authorities are [ROLE_USER]
+[DEBUG] 2017-05-01 23:49:33.386 [http-nio-8080-exec-1] CustomUserDetailsServiceImpl - user authorities are [ROLE_ADMIN]
+[ERROR] 2017-05-01 23:54:08.096 [http-nio-8080-exec-6] UserServiceImpl - result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+[ERROR] 2017-05-01 23:54:31.026 [http-nio-8080-exec-9] UserServiceImpl - result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+[ERROR] 2017-05-01 23:56:51.149 [http-nio-8080-exec-7] UserServiceImpl - result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+[INFO ] 2017-05-01 23:57:50.443 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 14296 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-01 23:57:50.493 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-01 23:57:50.494 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-01 23:58:14.307 [restartedMain] BackStrcApplication - Started BackStrcApplication in 25.372 seconds (JVM running for 29.564)
+[ERROR] 2017-05-01 23:58:52.535 [http-nio-8080-exec-6] UserServiceImpl - result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+[INFO ] 2017-05-02 00:01:12.068 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12012 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-02 00:01:12.104 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-02 00:01:12.106 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-02 00:01:59.530 [restartedMain] BackStrcApplication - Started BackStrcApplication in 49.237 seconds (JVM running for 55.0)
+[ERROR] 2017-05-02 00:04:29.327 [http-nio-8080-exec-8] UserServiceImpl - result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+[ERROR] 2017-05-02 00:05:15.505 [http-nio-8080-exec-1] UserServiceImpl - result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+[INFO ] 2017-05-02 00:05:49.327 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12012 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-02 00:05:49.336 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-02 00:05:49.338 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-02 00:06:02.203 [restartedMain] BackStrcApplication - Started BackStrcApplication in 13.067 seconds (JVM running for 297.672)
+[ERROR] 2017-05-02 00:06:41.283 [http-nio-8080-exec-5] UserServiceImpl - result returns more than one elements; nested exception is javax.persistence.NonUniqueResultException: result returns more than one elements
+[INFO ] 2017-05-02 23:00:18.412 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 10996 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-02 23:00:18.492 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-02 23:00:18.493 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-02 23:00:53.935 [restartedMain] BackStrcApplication - Started BackStrcApplication in 38.312 seconds (JVM running for 44.476)
+[ERROR] 2017-05-02 23:01:51.435 [http-nio-8080-exec-10] UserServiceImpl - detached entity passed to persist: com.models.Role; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.models.Role
+[ERROR] 2017-05-02 23:01:51.488 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Transaction marked as rollbackOnly
+[ERROR] 2017-05-02 23:01:51.503 [http-nio-8080-exec-10] UserServiceImpl - detached entity passed to persist: com.models.Role; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.models.Role
+[ERROR] 2017-05-02 23:01:51.527 [http-nio-8080-exec-10] CustomFilter - Request processing failed; nested exception is org.springframework.transaction.TransactionSystemException: Could not commit JPA transaction; nested exception is javax.persistence.RollbackException: Transaction marked as rollbackOnly
+[ERROR] 2017-05-02 23:01:51.558 [http-nio-8080-exec-10] UserServiceImpl - detached entity passed to persist: com.models.Role; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.models.Role
+[INFO ] 2017-05-02 23:05:53.953 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 10996 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-02 23:05:53.957 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-02 23:05:53.959 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-02 23:06:10.727 [restartedMain] BackStrcApplication - Started BackStrcApplication in 18.116 seconds (JVM running for 361.269)
+[INFO ] 2017-05-02 23:09:16.913 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 10996 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-02 23:09:16.917 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-02 23:09:16.918 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-02 23:09:29.527 [restartedMain] BackStrcApplication - Started BackStrcApplication in 12.936 seconds (JVM running for 560.069)
+[INFO ] 2017-05-02 23:17:19.422 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 10996 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-02 23:17:19.431 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-02 23:17:19.432 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-02 23:17:31.216 [restartedMain] BackStrcApplication - Started BackStrcApplication in 12.253 seconds (JVM running for 1041.757)
+[INFO ] 2017-05-02 23:21:25.120 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 10996 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-02 23:21:25.126 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-02 23:21:25.127 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-02 23:21:35.937 [restartedMain] BackStrcApplication - Started BackStrcApplication in 11.078 seconds (JVM running for 1286.479)
+[INFO ] 2017-05-02 23:32:07.866 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 10996 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-02 23:32:07.870 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-02 23:32:07.873 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-02 23:32:22.673 [restartedMain] BackStrcApplication - Started BackStrcApplication in 15.005 seconds (JVM running for 1933.215)
+[INFO ] 2017-05-03 00:58:02.999 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 10996 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 00:58:03.009 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 00:58:03.010 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 00:58:17.496 [restartedMain] BackStrcApplication - Started BackStrcApplication in 15.062 seconds (JVM running for 7087.673)
+[ERROR] 2017-05-03 00:58:22.784 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (reports:66)
+[ERROR] 2017-05-03 00:58:22.939 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (reports:66)
+[INFO ] 2017-05-03 01:18:44.438 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 10996 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 01:18:44.446 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 01:18:44.449 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 01:18:59.095 [restartedMain] BackStrcApplication - Started BackStrcApplication in 15.129 seconds (JVM running for 8329.272)
+[INFO ] 2017-05-03 10:46:25.823 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12124 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 10:46:26.003 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 10:46:26.005 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 10:47:11.019 [restartedMain] BackStrcApplication - Started BackStrcApplication in 48.022 seconds (JVM running for 54.28)
+[ERROR] 2017-05-03 11:21:11.756 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:66)
+[ERROR] 2017-05-03 11:21:11.904 [http-nio-8080-exec-5] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:66)
+[INFO ] 2017-05-03 12:04:31.417 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 6204 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:04:31.456 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:04:31.458 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:05:14.356 [restartedMain] BackStrcApplication - Started BackStrcApplication in 46.237 seconds (JVM running for 49.582)
+[INFO ] 2017-05-03 12:10:49.054 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 13624 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:10:49.081 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:10:49.083 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:11:13.656 [restartedMain] BackStrcApplication - Started BackStrcApplication in 26.148 seconds (JVM running for 29.365)
+[ERROR] 2017-05-03 12:12:30.978 [http-nio-8080-exec-7] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:67)
+[ERROR] 2017-05-03 12:12:31.242 [http-nio-8080-exec-7] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:67)
+[INFO ] 2017-05-03 12:13:40.996 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 13624 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:13:41.003 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:13:41.004 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:13:57.850 [restartedMain] BackStrcApplication - Started BackStrcApplication in 17.292 seconds (JVM running for 193.56)
+[ERROR] 2017-05-03 12:14:01.053 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:67)
+[ERROR] 2017-05-03 12:14:01.201 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:67)
+[ERROR] 2017-05-03 12:14:02.501 [http-nio-8080-exec-2] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:67)
+[ERROR] 2017-05-03 12:14:02.571 [http-nio-8080-exec-2] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:67)
+[ERROR] 2017-05-03 12:14:03.886 [http-nio-8080-exec-3] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:67)
+[ERROR] 2017-05-03 12:14:03.956 [http-nio-8080-exec-3] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateProcessingException: Error during execution of processor 'org.thymeleaf.spring4.processor.attr.SpringSelectFieldAttrProcessor' (index:67)
+[INFO ] 2017-05-03 12:21:12.627 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 13624 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:21:12.630 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:21:12.631 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:21:26.385 [restartedMain] BackStrcApplication - Started BackStrcApplication in 14.291 seconds (JVM running for 642.094)
+[ERROR] 2017-05-03 12:21:38.000 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 77 - column 35
+[ERROR] 2017-05-03 12:21:38.051 [http-nio-8080-exec-1] CustomFilter - Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Exception parsing document: template="index", line 77 - column 35
+[INFO ] 2017-05-03 12:27:35.469 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 13624 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:27:35.480 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:27:35.481 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:27:46.181 [restartedMain] BackStrcApplication - Started BackStrcApplication in 11.068 seconds (JVM running for 1021.89)
+[INFO ] 2017-05-03 12:28:35.443 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12044 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:28:35.474 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:28:35.476 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:29:02.365 [restartedMain] BackStrcApplication - Started BackStrcApplication in 28.089 seconds (JVM running for 32.511)
+[INFO ] 2017-05-03 12:31:19.724 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12044 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:31:19.736 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:31:19.737 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:31:34.158 [restartedMain] BackStrcApplication - Started BackStrcApplication in 14.932 seconds (JVM running for 184.304)
+[INFO ] 2017-05-03 12:34:31.668 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12044 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:34:31.677 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:34:31.678 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:34:43.432 [restartedMain] BackStrcApplication - Started BackStrcApplication in 12.159 seconds (JVM running for 373.577)
+[ERROR] 2017-05-03 12:34:59.766 [http-nio-8080-exec-2] TodoServiceImpl - Invalid property 'id' of bean class [com.models.Todo_$$_jvst21b_8]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+[INFO ] 2017-05-03 12:37:10.559 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12044 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:37:10.560 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:37:10.562 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:37:22.512 [restartedMain] BackStrcApplication - Started BackStrcApplication in 12.159 seconds (JVM running for 532.658)
+[INFO ] 2017-05-03 12:38:36.785 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12044 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:38:36.790 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:38:36.791 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:39:03.169 [restartedMain] BackStrcApplication - Started BackStrcApplication in 26.869 seconds (JVM running for 633.314)
+[INFO ] 2017-05-03 12:40:45.901 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12044 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:40:45.901 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:40:45.901 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:40:57.209 [restartedMain] BackStrcApplication - Started BackStrcApplication in 11.558 seconds (JVM running for 747.355)
+[ERROR] 2017-05-03 12:41:19.620 [http-nio-8080-exec-4] TodoServiceImpl - Invalid property 'id' of bean class [com.models.Todo_$$_jvst21b_11]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+[ERROR] 2017-05-03 12:41:39.526 [http-nio-8080-exec-1] TodoServiceImpl - Invalid property 'id' of bean class [com.models.Todo_$$_jvst21b_11]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+[ERROR] 2017-05-03 12:42:30.908 [http-nio-8080-exec-7] TodoServiceImpl - Invalid property 'id' of bean class [com.models.Todo_$$_jvst21b_11]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+[ERROR] 2017-05-03 12:47:41.092 [http-nio-8080-exec-6] TodoServiceImpl - Invalid property 'id' of bean class [com.models.Todo_$$_jvst21b_11]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+[INFO ] 2017-05-03 12:47:43.345 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12044 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:47:43.350 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:47:43.354 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:47:52.826 [restartedMain] BackStrcApplication - Started BackStrcApplication in 9.634 seconds (JVM running for 1162.972)
+[INFO ] 2017-05-03 12:48:33.083 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 12044 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:48:33.085 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:48:33.086 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:48:45.048 [restartedMain] BackStrcApplication - Started BackStrcApplication in 12.133 seconds (JVM running for 1215.194)
+[INFO ] 2017-05-03 12:50:01.226 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 3004 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:50:01.250 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:50:01.251 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:50:35.114 [restartedMain] BackStrcApplication - Started BackStrcApplication in 35.607 seconds (JVM running for 42.005)
+[INFO ] 2017-05-03 12:52:37.099 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 3004 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 12:52:37.121 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 12:52:37.123 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 12:52:53.219 [restartedMain] BackStrcApplication - Started BackStrcApplication in 16.555 seconds (JVM running for 180.11)
+[INFO ] 2017-05-03 13:52:23.430 [restartedMain] BackStrcApplication - Starting BackStrcApplication on DESKTOP-COVKOJ3 with PID 13436 (C:\Users\cihan\backend-projects\TodoApp\BackStrc\target\classes started by cihan in C:\Users\cihan\backend-projects\TodoApp)
+[DEBUG] 2017-05-03 13:52:23.496 [restartedMain] BackStrcApplication - Running with Spring Boot v1.4.1.RELEASE, Spring v4.3.3.RELEASE
+[INFO ] 2017-05-03 13:52:23.497 [restartedMain] BackStrcApplication - No active profile set, falling back to default profiles: default
+[INFO ] 2017-05-03 13:52:53.229 [restartedMain] BackStrcApplication - Started BackStrcApplication in 31.01 seconds (JVM running for 37.986)

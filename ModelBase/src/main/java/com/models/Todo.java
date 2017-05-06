@@ -32,6 +32,18 @@ public class Todo extends AbstractPersistable{
     @JoinColumn(name = "user_id")
     private User user;
 
+    @ManyToOne
+    @JoinColumn(name = "assignedToUser")
+    private User assignedToUser;
+
+    public User getAssignedToUser() {
+        return assignedToUser;
+    }
+
+    public void setAssignedToUser(User assignedToUser) {
+        this.assignedToUser = assignedToUser;
+    }
+
     public User getUser() {
         return user;
     }

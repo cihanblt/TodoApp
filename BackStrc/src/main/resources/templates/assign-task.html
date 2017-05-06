@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout}">
+
+<head>
+    <title>ToDo List App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen"/>
+    <link href="css/styles.css"
+          th:href="@{/css/styles.css}"
+          rel="stylesheet" media="screen"/>
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
+            th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
+
+    <link href="css/datepicker.css" rel="stylesheet"/>
+    <link href="css/bootstrap-table.css" rel="stylesheet"/>
+    <!--Icons-->
+    <script src="js/lumino.glyphs.js"></script>
+</head>
+<body>
+<!-- Header -->
+<div th:replace="fragments/header :: header"></div>
+<div th:replace="fragments/sidebar :: sidebar"></div>
+<!-- Insert content into the layouts/layout.html -->
+<th:block layout:fragment="content">
+    <div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Yeni İş Oluştur ve Ata</h1>
+            </div>
+        </div><!--/.row-->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">İş Ekle</div>
+                    <div class="panel-body">
+                        <form method="post" action="/add_job" th:action="@{/add_job}" th:object="${todo}">
+                            <div class="form-group"><label>Atanacak Kişi</label><select th:name="assignedToUser"
+                                                                                  th:field="*{assignedToUser}"
+                                                                                  class="form-control">
+                                <option th:each="user : ${users}"
+                                        th:value="${user.getId()}"
+                                        th:text="${user.getFirstName() + ' ' + user.getLastName()}">
+                                </option>
+                            </select></div>
+                            <div class="form-group"><label>İş Tanımı</label><input th:field="*{description}"
+                                                                                       type="text" name="description"
+                                                                                       class="form-control"/></div>
+                            <div class="form-group"><label>Bitiş Tarihi</label>
+                                <div th:name="dueDate" class="input-group date" data-provide="datepicker"
+                                     data-date-format="dd.mm.yyyy" data-date-start-date="0d"
+                                     th:value="${#dates.format(#dates.createNow(),'dd.mm.yyyy')}">
+                                    <input th:field="*{dueDate}" th:name="dueDate" id="datepicker" type="text"
+                                           class="form-control"/>
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group"><label>Öncelik</label><select th:name="priority"
+                                                                                 th:field="*{priority}"
+                                                                                 class="form-control">
+                                <option th:each="priority : ${T(com.models.Priority).values()}"
+                                        th:value="${priority}"
+                                        th:text="${priority}">
+                                </option>
+                            </select></div>
+                            <div class="form-group"><label>Statü</label><select th:name="status" th:field="*{status}"
+                                                                               class="form-control">
+                                <option th:each="status : ${T(com.models.Status).values()}"
+                                        th:value="${status}"
+                                        th:text="${status}">
+                                </option>
+                            </select></div>
+                            <!--<input type="hidden" th:field="*{user}" th:value="${#authentication.getPrincipal()}" />-->
+                            <div class="form-group"><label>&nbsp;</label><input class="form-control btn btn-primary"
+                                                                              type="submit" value="Kaydet"/></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div><!--/.row-->
+
+        <div class="row">
+
+        </div><!--/.row-->
+    </div>    <!--/.main-->
+
+    <script th:inline="javascript" type="text/javascript">
+        /*<![CDATA[*/
+
+        $(function () {
+        });
+
+        /*]]>*/
+    </script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chart.min.js"></script>
+    <script src="js/chart-data.js"></script>
+    <script src="js/easypiechart.js"></script>
+    <script src="js/easypiechart-data.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+    <script type="text/javascript" th:inline="javascript">
+        /*<![CDATA[*/
+        !function ($) {
+            $(document).on("click", "ul.nav li.parent > a > span.icon", function () {
+                $(this).find('em:first').toggleClass("glyphicon-minus");
+            });
+            $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+
+        }(window.jQuery);
+
+        $(window).on('resize', function () {
+            if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+        })
+        $(window).on('resize', function () {
+            if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+        });
+        /*]]>*/
+    </script>
+</th:block>
+
+</body>
+</html>
+

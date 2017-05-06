@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}"
@@ -9,7 +12,10 @@
 <div th:fragment="sidebar">
     <div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
         <ul class="nav menu">
-            <li class="active"><a href="/" th:href="@{/}"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Dashboard</a></li>
+            <li sec:authorize="hasRole('ROLE_ADMIN')" ><a href="/" th:href="@{/get-all-task}"><svg class="glyph stroked app-window"><use xlink:href="#stroked-app-window"></use></svg> Tüm İşler</a></li>
+            <li ><a href="/" th:href="@{/}"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Yapılacaklar</a></li>
+            <li sec:authorize="hasRole('ROLE_ADMIN')" ><a href="/assign-task" th:href="@{/assign-task}"><svg class="glyph stroked pencil"><use xlink:href="#stroked-pencil"></use></svg> Yeni İş Ata</a></li>
+            <li sec:authorize="hasRole('ROLE_ADMIN')" ><a href="/reports" th:href="@{/reports}"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg>Raporlar</a></li>
             <!--<li><a href="widgets.html"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Widgets</a></li>
             <li><a href="charts.html"><svg class="glyph stroked line-graph"><use xlink:href="#stroked-line-graph"></use></svg> Charts</a></li>
             <li><a href="tables.html"><svg class="glyph stroked table"><use xlink:href="#stroked-table"></use></svg> Tables</a></li>

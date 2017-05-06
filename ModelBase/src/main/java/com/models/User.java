@@ -1,6 +1,7 @@
 package com.models;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -29,7 +30,7 @@ public class User extends AbstractPersistable{
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "record_id"),
             inverseJoinColumns = @JoinColumn(name = "role_id", referencedColumnName = "record_id"))
-    private Set<Role> roles;
+    private List<Role> roles;
 
     public String getUserName() {
         return userName;
@@ -71,11 +72,11 @@ public class User extends AbstractPersistable{
         this.email = email;
     }
 
-    public Set<Role> getRoles() {
+    public List<Role> getRoles() {
         return roles;
     }
 
-    public void setRoles(Set<Role> roles) {
+    public void setRoles(List<Role> roles) {
         this.roles = roles;
     }
 }

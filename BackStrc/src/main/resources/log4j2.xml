@@ -46,18 +46,18 @@
         </Jdbc>
     </Appenders>
     <Loggers>
-        <Logger name="org.springframework.web" level="info" additivity="false">
+        <Logger name="org.springframework.web" level="all" additivity="false">
             <AppenderRef ref="SpringBoot-Appender"/>
             <AppenderRef ref="Console-Appender"/>
         </Logger>
-        <Logger name="com.log4j2.controller" level="info" additivity="false">
+        <Logger name="com.log4j2.controller" level="all" additivity="false">
             <AppenderRef ref="App-Appender"/>
             <AppenderRef ref="Console-Appender"/>
         </Logger>
-        <Logger name="com" level="info" additivity="false">
+        <Logger name="com" level="all" additivity="false">
             <AppenderRef ref="App-Appender"/>
         </Logger>
-        <Logger name="com" level="error" additivity="false">
+        <Logger name="com" level="all" additivity="false">
             <AppenderRef ref="App-Appender"/>
             <AppenderRef ref="databaseAppender"/>
         </Logger>

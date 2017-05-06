@@ -32,80 +32,47 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">My Todo List</h1>
+                <h1 class="page-header">Yapılacaklar</h1>
             </div>
         </div><!--/.row-->
 
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Add a job!</div>
+                    <div class="panel-heading">İş Listesi</div>
                     <div class="panel-body">
-                        <form method="post" action="/add_job" th:action="@{/add_job}" th:object="${todo}">
-                            <div class="col-md-3"><label>Job Description</label><input th:field="*{description}"
-                                                                                       type="text" name="description"
-                                                                                       class="form-control"/></div>
-                            <div class="col-md-3"><label>Due Date</label>
-                                <div th:name="dueDate" class="input-group date" data-provide="datepicker"
-                                     data-date-format="dd.mm.yyyy" data-date-start-date="0d"
-                                     th:value="${#dates.format(#dates.createNow(),'dd.mm.yyyy')}">
-                                    <input th:field="*{dueDate}" th:name="dueDate" id="datepicker" type="text"
-                                           class="form-control"/>
-                                    <div class="input-group-addon">
-                                        <span class="glyphicon glyphicon-th"></span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-md-2"><label>Priority</label><select th:name="priority"
-                                                                                 th:field="*{priority}"
-                                                                                 class="form-control">
-                                <option th:each="priority : ${T(com.models.Priority).values()}"
-                                        th:value="${priority}"
-                                        th:text="${priority}">
-                                </option>
-                            </select></div>
-                            <div class="col-md-2"><label>Status</label><select th:name="status" th:field="*{status}"
-                                                                               class="form-control">
-                                <option th:each="status : ${T(com.models.Status).values()}"
-                                        th:value="${status}"
-                                        th:text="${status}">
-                                </option>
-                            </select></div>
-                            <!--<input type="hidden" th:field="*{user}" th:value="${#authentication.getPrincipal()}" />-->
-                            <div class="col-md-2"><label>&nbsp;</label><input class="form-control btn btn-primary"
-                                                                              type="submit" value="Submit"/></div>
-                        </form>
-                    </div>
-
-                </div>
-            </div>
-        </div><!--/.row-->
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Job List</div>
-                    <div class="panel-body">
-                        <table data-toggle="table" data-show-refresh="true"
-                               data-show-toggle="true" data-show-columns="true" data-search="true"
-                               data-select-item-name="toolbar1" data-pagination="true" data-sort-name="name"
-                               data-sort-order="desc">
+                        <table width="700" cellpadding="10" cellspacing="10">
                             <thead>
                             <tr>
                                 <!--<th  data-checkbox="true">Job ID</th>-->
-                                <th data-sortable="true">Job Description</th>
-                                <th data-sortable="true">Due Date</th>
-                                <th data-sortable="true">Priority</th>
-                                <th data-sortable="true">Status</th>
+                                <th >İş Tanımı</th>
+                                <th >Bitiş Tarihi</th>
+                                <th >Öncelik</th>
+                                <th>Statü</th>
+                                <th></th>
                             </tr>
                             </thead>
                             <tbody>
+
                             <tr th:each="todo : ${todoList}" id="tr-id-2" class="tr-class-2">
                                 <td><span th:text="${todo.description}"></span></td>
                                 <td><span th:text="${todo.dueDate}"></span></td>
-                                <td><span th:text="${todo.priority}"></span></td>
-                                <td><span th:text="${todo.status}"></span></td>
+                                <td><span th:text="${todo.priority}"></span> </td>
+                                <form method="post" action="/update-job" th:action="@{/update-job}">
+                                    <input type="hidden" th:value="${todo.id}" th:name="todoId" name="todoId"/>
+                                    <td><span>
+                                    <select  th:name="statusName" name="statusName"
+                                            class="form-control">
+                                        <option th:each="status : ${T(com.models.Status).values()}"
+                                                th:selected="(${todo.status}==${status})"
+                                                th:value="${status}"
+                                                th:text="${status}">
+                                        </option>
+                                    </select>
+                                </span></td>
+                                    <td><input class="form-control btn btn-primary"
+                                               type="submit" value="Güncelle"/></td>
+                                </form>
                             </tr>
                             </tbody>
                         </table>
@@ -115,7 +82,6 @@
         </div><!--/.row-->
 
         <div class="row">
-
         </div><!--/.row-->
     </div>    <!--/.main-->
 
